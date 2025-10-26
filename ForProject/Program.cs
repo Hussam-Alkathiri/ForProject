@@ -1,4 +1,5 @@
-﻿using ForProject.Model.Salalah_Delivery_Express;
+﻿using ForProject.Model._2__Salalah_Book_Café;
+using ForProject.Model.Salalah_Delivery_Express;
 
 namespace ForProject
 {
@@ -22,6 +23,41 @@ namespace ForProject
             Console.WriteLine("\n---- All Delivers ----");
             system.ShowAllDeliveries();
 
+
+            Console.WriteLine("\n--||-------||--------(( Project 2 ))--------||-------||--\n");
+
+            CafeSystem cafe = new CafeSystem();
+
+            
+            cafe.AddMenuItem(new MenuItem("Espresso", 1.5));
+            cafe.AddMenuItem(new MenuItem("Latte", 2.0));
+
+            
+            cafe.AddBook(new Book("The Alchemist", "Paulo Coelho", BookStatus.Available));
+            cafe.AddBook(new Book("Atomic Habits", "James Clear", BookStatus.Borrowed));
+
+            
+            Customers C1 = new Customers("Hussam");
+            cafe.AddCustomer(C1);
+
+
+            C1.OrderDrink(cafe.Menu[0]);
+            C1.OrderDrink(cafe.Menu[1]);
+
+
+            C1.BorrowBook(cafe.Books[0]);
+            C1.BorrowBook(cafe.Books[1]);
+
+            
+            cafe.ShowAllMenu();
+            cafe.ShowAllBooks();
+            cafe.ShowAllCustomers();
+
+
+            C1.ReturnBooks();
+            Console.WriteLine("\nAfter returning books:");
+            cafe.ShowAllBooks();
         }
     }
+    
 }
