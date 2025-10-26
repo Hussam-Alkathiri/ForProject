@@ -1,0 +1,31 @@
+       DeliverySystem
+-------------------------------
+- Drivers : List<Driver>
+- Customers : List<Customer>
+- Deliveries : List<Delivery>
++ AddDelivery(customer, driver, status)
++ ShowAllDeliveries()
+        Driver
+-------------------------------
+- DriverName : string
+- PhoneNumber : string
+- Deliveries : List<Delivery>
++ AddDelivery(delivery)
++ PrintInfo()
++ CheckDeliveredDrivers()
+       Customer
+-------------------------------
+- Name : string
+- Address : string
++ PrintInfo()
+
+-------------------------------
+       Delivery
+- Customer : Customer
+- Driver : Driver
+- Status : Status
+-------------------------------
+       Status (Enum)
+- Pending
+- OnTheWay
+- Delivered
