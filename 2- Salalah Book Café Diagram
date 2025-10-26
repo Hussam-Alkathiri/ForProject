@@ -1,0 +1,51 @@
+    BookStatus (Enum)
+-------------------------------
+- Available
+- Borrowed
+
+
+CafeSystem
+-------------------------------
+- Menu : List<MenuItem>
+- Books : List<Book>
+- Customers : List<Customer>
+Methods:
++ AddMenuItem(item)
++ AddBook(book)
++ AddCustomer(customer)
++ ShowAllMenu()
++ ShowAllBooks()
++ ShowAllCustomers()
+
+
+        Customer
+-------------------------------
+- Name : string
+- OrderedDrinks : List<MenuItem>
+- BorrowedBooks : List<Book>
+Methods:
++ OrderDrink(item)
++ BorrowBook(book)
++ ReturnBooks()
++ PrintInfo()
+
+
+         Book
+-------------------------------
+- Title : string
+- Author : string
+- Status : BookStatus
+Methods:
++ BorrowBook()
++ ReturnBook()
++ PrintInfo()
+
+
+       MenuItem
+-------------------------------
+- Name : string
+- Price : double
+Methods:
++ PrintInfo()
+
+
