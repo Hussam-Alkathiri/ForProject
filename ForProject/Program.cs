@@ -1,4 +1,6 @@
 ﻿using ForProject.Model._2__Salalah_Book_Café;
+using ForProject.Model._3__Dhofar_Car_Rental;
+using ForProject.Model._4__Salalah_Sports_League;
 using ForProject.Model.Salalah_Delivery_Express;
 
 namespace ForProject
@@ -7,6 +9,7 @@ namespace ForProject
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("\n--||-------||--------(( Project 1 ))--------||-------||--\n");
             DeliverySystem system = new DeliverySystem();
 
             Customer c1= new Customer("Hussam Al-Kathiri","Salalah");
@@ -57,7 +60,53 @@ namespace ForProject
             C1.ReturnBooks();
             Console.WriteLine("\nAfter returning books:");
             cafe.ShowAllBooks();
+
+            Console.WriteLine("\n--||-------||--------(( Project 3 ))--------||-------||--\n");
+            RentalSystem System = new RentalSystem();
+
+            System.AddCar(new Car { Id = 1, Make = "Toyota", Model = "Corolla", Price = 15 });
+            System.AddCar(new Car { Id = 2, Make = "GMC", Model = "Sierra", Price = 20 });
+            System.AddCar(new Car { Id = 3, Make = "Honda", Model = "Accord", Price = 25 });
+
+            System.AddCustomer(new Customerr { Id = 1, Name = "Hussam", PhoneNumber = "94383382" });
+            System.AddCustomer(new Customerr { Id = 2, Name = "Salim", PhoneNumber = "93456789" });
+            Console.WriteLine("-------First test--------");
+            System.ShowAvailableCars();
+            Console.WriteLine("----");
+            System.RentCar(1, 3, 15);
+            System.ShowAvailableCars();
+            System.ShowAllRentals();
+            Console.WriteLine("---------Second test---------");
+            System.ShowAvailableCars();
+            System.RentCar(2, 2, 5);
+            System.ShowAvailableCars();
+            System.ShowAllRentals();
+            System.ReturnCar(2);
+            System.ShowAvailableCars();
+            Console.WriteLine("--------Result-------");
+            System.CalculateTotalRevenue();
+
+            Console.WriteLine("\n--||-------||--------(( Project 4 ))--------||-------||--\n");
+
+            League league = new League();
+
+            Team teamA = new Team("Salalah Goats", "Hussam");
+            teamA.AddPlayer(new Player("Ahmed", "Forward", 9));
+            teamA.AddPlayer(new Player("Salim", "Midfielder", 8));
+
+            Team teamB = new Team("Salalah Hawks", "Fahad");
+            teamB.AddPlayer(new Player("Khaled", "Forward", 10));
+            teamB.AddPlayer(new Player("Fayadh", "Goalkeeper", 1));
+
+            league.AddTeam(teamA);
+            league.AddTeam(teamB);
+
+            Match match1 = new Match(teamA, teamB);
+            match1.SetResult(2, 1);
+            league.RecordMatch(match1);
+
+            league.ShowAllMatches();
+            league.ShowStandings();
         }
     }
-    
 }
