@@ -1,0 +1,34 @@
+        League
+-------------------------------
+- Teams : List<Team>
+- Matches : List<Match>
++ AddTeam(team)
++ RecordMatch(match)
++ ShowStandings()
++ ShowAllMatches()
+
+         Team
+-------------------------------
+- Name : string
+- Coach : string
+- Players : List<Player>
+- Points : int
++ AddPlayer(player)
++ ShowTeamInfo()
+
+        Player
+-------------------------------
+- Name : string
+- Position : string
+- Number : int
++ ShowInfo()
+
+         Match
+-------------------------------
+- Team1 : Team
+- Team2 : Team
+- ScoreTeam1 : int
+- ScoreTeam2 : int
+- Winner : Team
++ SetResult(score1, score2)
++ ShowMatchInfo()
