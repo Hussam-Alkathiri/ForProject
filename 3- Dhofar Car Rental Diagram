@@ -1,0 +1,41 @@
+       RentalSystem
+-------------------------------
+- cars : List<Car>
+- customers : List<Customerr>
+- rentals : List<RentalRecord>
+- rentalCounter : int
++ AddCar(car)
++ AddCustomer(customer)
++ ShowAvailableCars()
++ RentCar(customerID, carID, days)
++ ReturnCar(carID)
++ ShowAllRentals()
++ CalculateTotalRevenue()
+
+        Customerr
+-------------------------------
+- Id : int
+- Name : string
+- PhoneNumber : string
++ ShowDetail()
+
+         Car
+-------------------------------
+- Id : int
+- Make : string
+- Model : string
+- Price : int
+- IsAvilaible : bool
++ MarkAsRented()
++ MarkAsAvailable()
++ ShowDetail()
+
+      RentalRecord
+-------------------------------
+- Id : int
+- DayRented : int
+- TotalCost : int
+- Customer : Customerr
+- Car : Car
++ CalculateTotalCost()
++ ShowRecordDetails()
