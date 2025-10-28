@@ -7,7 +7,7 @@ Each project applies **Object-Oriented Programming (OOP)** concepts along with *
 ---
 
 ## 📚 Table of Contents  
-- [🛵 Project 1 — Salalah Delivery Express]([https://github.com/Hussam-Alkathiri/ForProject/tree/master/ForProject/Model/1-%20Salalah%20Delivery%20Express](https://github.com/Hussam-Alkathiri/ForProject/tree/master/ForProject/Model/1-%20Salalah%20Delivery%20Express))  
+- [🛵 Project 1 — Salalah Delivery Express](https://github.com/Hussam-Alkathiri/ForProject/tree/master/ForProject/Model/1-%20Salalah%20Delivery%20Express)  
 - [☕ Project 2 — Salalah Book Café]([[#-project-2--salalah-book-café](https://github.com/Hussam-Alkathiri/ForProject/tree/master/ForProject/Model/2-%20Salalah%20Book%20Caf%C3%A9)](https://github.com/Hussam-Alkathiri/ForProject/tree/master/ForProject/Model/2-%20Salalah%20Book%20Caf%C3%A9))  
 - [🚗 Project 3 — Dhofar Car Rental]([https://github.com/Hussam-Alkathiri/ForProject/tree/master/ForProject/Model/3-%20Dhofar%20Car%20Rental](https://github.com/Hussam-Alkathiri/ForProject/tree/master/ForProject/Model/3-%20Dhofar%20Car%20Rental))  
 - [⚽ Project 4 — Salalah Sports League]([#-project-4--salalah-sports-league](https://github.com/Hussam-Alkathiri/ForProject/tree/master/ForProject/Model/4-%20Salalah%20Sports%20League))  
