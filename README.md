@@ -95,6 +95,8 @@ Salalah Municipality hosts an annual football league for local teams and academi
 ## 👨‍💻 Author  
 **Hussam Salim Al-Kathiri**  
 📍 *Salalah, Oman*  
+📧 hussamalk10@gmail.com  
+📞 +968 94383382
 🔗 [LinkedIn Profile](https://www.linkedin.com/in/hussam-alkathiri)  
 
 ---
